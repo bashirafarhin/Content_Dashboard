@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html {
+  /* overflow: hidden; */
+  box-sizing: border-box;
+}
+
+
+:root {
+  --color-bg: #ffffff;                 /* light body background */
+  --color-surface: #f1f5f9;            /* light cards/buttons/etc */
+  --color-text: #000000;               /* light text */
+  --color-muted: #4b5563;              /* gray-600 */
+  --color-hover: #2563eb;              /* blue-600 */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark {
+  --color-bg: #000000;                 /* full black background */
+  --color-surface: #1e1e1e;            /* darker card/surface */
+  --color-text: #d1d5db;               /* gray-300 (tailwind) */
+  --color-muted: #9ca3af;              /* gray-400 */
+  --color-hover: #60a5fa;              /* blue-400 */
+}
+
+/* Hides scrollbar for all browsers */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
