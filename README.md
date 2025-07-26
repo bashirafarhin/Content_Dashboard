@@ -1,8 +1,8 @@
-# 🧠 Personalized Content Dashboard - SDE Intern Assignment
+# 🧠 Content Dashboard
 
 ## 📄 Overview
 
-This is a **Personalized Content Dashboard** built as part of the SDE (Frontend) Internship assignment. It enables users to view, search, filter, and manage personalized content including **news**, **movie recommendations**, and **trending posts** from multiple APIs.
+This is a **Content Dashboard** built as part of improving frontend skills. It enables users to view, search, filter, and manage personalized content including **news** and **movie recommendations** from multiple APIs.
 
 > **Tech Stack**: Next.js (App Router) • React • TypeScript • Redux Toolkit • Tailwind CSS • Framer Motion • Axios • i18n • NextAuth.js
 
@@ -10,7 +10,7 @@ This is a **Personalized Content Dashboard** built as part of the SDE (Frontend)
 
 ## 🔗 Live Demo
 
-https://assignment-fawn-kappa.vercel.app/
+https://content-dashboard-ten.vercel.app/
 
 ---
 
@@ -22,7 +22,7 @@ Will be added soon...
 
 ## ✅ Core Features
 
-### 1. Personalized Content Feed
+### 1. Content Feed
 
 - **User Preferences**:
   - Users can choose favorite categories like *Technology*, *Sports*, *Business*, etc.
@@ -31,11 +31,10 @@ Will be added soon...
 - **API Integrations**:
   - **News API**: Top headlines fetched using filters like category, country, and query.
   - **TMDB API**: Fetches movies using endpoints like `popular`, `top_rated`, and `search`.
-  - **Mock Social API (optional)**: Placeholder for social post rendering (if time permits).
 
 - **Interactive Cards**:
   - Responsive `NewsCard` and `MovieCard` components.
-  - Show image, title, description, author/source, and CTA like **Read More** or **Play Now**.
+  - Show image, title, description, author/source, and CTA like **Read More**.
   - Fallback handling for broken images and external domains.
 
 - **Infinite Scrolling**:
@@ -47,7 +46,7 @@ Will be added soon...
 ### 2. User Dashboard Layout
 
 - **Main Layout**:
-  - Sidebar (optional) and responsive header with user controls.
+  - responsive header with user controls.
   - Top header includes:
     - Search bar (debounced)
     - Dark mode toggle
@@ -55,7 +54,7 @@ Will be added soon...
     - User login/logout (Google)
 
 - **Sections**:
-  - **Personalized Feed**: Unified view of news, movies, and posts.
+  - **Feed**: Unified view of news, movies.
   - **Trending**: Shows trending movies and top news using `HorizontalScroller`.
   - **Favorites**: Content added to favorites is available across sessions via Redux store.
 
@@ -75,7 +74,7 @@ Will be added soon...
 ### 4. Advanced UI/UX Features
 
 - **Drag-and-Drop**:
-  - (WIP) Will use `Framer Motion` or `React DnD` to allow reordering content.
+  - implemented using `React DnD`.
 
 - **Dark Mode**:
   - Implemented using Tailwind CSS + CSS custom properties.
@@ -113,22 +112,6 @@ Will be added soon...
 - Supports English and Hindi with dynamic language toggle.
 
 ---
-
-### 8. Testing Strategy (To Be Added)
-
-> **Testing will be implemented after finalizing core functionality and structure refactoring.**
-
-- **Unit Testing**: Components like `NewsCard`, `useDebounce`, `TopBar` (using React Testing Library).
-- **Integration Testing**: API data flow, Redux dispatch + reducer logic.
-- **E2E Testing**: Using **Cypress** or **Playwright** to test:
-  - Search
-  - Infinite scroll
-  - Favorites
-  - Authentication
-
----
-
-## 🧪 Testing Roadmap
 
 ```bash
 # Will be implemented after stabilizing code base
